@@ -646,7 +646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirePoint: {fileID: 756157067}
   Player: {fileID: 1409305731}
-  Projectile: {fileID: 4065376150767928996, guid: c038c64a8549c224e9a3adff279859db, type: 3}
+  Projectile: {fileID: 3623094192711998199, guid: c038c64a8549c224e9a3adff279859db, type: 3}
   fireRate: 6
   MoveSpeed: 0.04
 --- !u!1 &1685755280
