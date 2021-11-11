@@ -53,10 +53,12 @@
     <UnityVersion>2020.3.22f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraMovement.cs" />
-    <Compile Include="Assets\SharkMovement.cs" />
-    <Compile Include="Assets\LoopingBackground.cs" />
-    <Compile Include="Assets\SpawnBarrels.cs" />
+    <Compile Include="Assets\Scripts\ProjectileMove.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\SharkMovement.cs" />
+    <Compile Include="Assets\Scripts\LoopingBackground.cs" />
+    <Compile Include="Assets\Scripts\SpawnBarrels.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
