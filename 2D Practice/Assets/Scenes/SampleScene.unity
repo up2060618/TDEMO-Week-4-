@@ -872,7 +872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d28b8bf9ab88d14489e12b7e438967e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  barrelObstacle: {fileID: 8531319819766484557, guid: c4ada2c5aff306848a3947091c4cdf06, type: 3}
+  barrelObstacle: {fileID: 7355741678898287251, guid: c4ada2c5aff306848a3947091c4cdf06, type: 3}
   maxX: 3.5
   minX: 3
   maxY: 4.6
