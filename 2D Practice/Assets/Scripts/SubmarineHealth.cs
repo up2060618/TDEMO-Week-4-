@@ -5,10 +5,14 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
 
-    private int Health;
+  private int Health;
+    public GameObject Player;
+    public ScoreScript Score;    
 
     void Start()
     {
+        Player = GameObject.Find("shark (player sprite)");
+        Score = Player.GetComponent<ScoreScript>();
         Health = 20;
     }
 
@@ -19,6 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (Health == 0)
         {
             Destroy(gameObject);
+            Score.ScoreCount = Score.ScoreCount + 1;
         }
 
     }
@@ -33,6 +38,5 @@ public class NewBehaviourScript : MonoBehaviour
     }
 
     }
-
 
 }

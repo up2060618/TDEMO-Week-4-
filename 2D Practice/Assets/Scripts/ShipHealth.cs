@@ -6,9 +6,13 @@ public class ShipHealth : MonoBehaviour
 {
 
    private int Health;
+    public GameObject Player;
+    public ScoreScript Score;    
 
     void Start()
     {
+        Player = GameObject.Find("shark (player sprite)");
+        Score = Player.GetComponent<ScoreScript>();
         Health = 20;
     }
 
@@ -19,6 +23,7 @@ public class ShipHealth : MonoBehaviour
         if (Health == 0)
         {
             Destroy(gameObject);
+            Score.ScoreCount = Score.ScoreCount + 1;
         }
 
     }
