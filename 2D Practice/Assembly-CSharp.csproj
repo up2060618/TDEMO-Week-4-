@@ -49,12 +49,15 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ProjectileMove.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
+     <Compile Include="Assets\Scripts\SubmarineProjectile.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\SharkMovement.cs" />
+     <Compile Include="Assets\Scripts\SpawnSubmarine.cs" />
      <Compile Include="Assets\Scripts\LoopingBackground.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\Menu.cs" />
      <Compile Include="Assets\Scripts\SpawnBarrels.cs" />
      <Compile Include="Assets\Scripts\HitboxCollider.cs" />
+     <Compile Include="Assets\Scripts\SubmarineAI.cs" />
      <Compile Include="Assets\Scripts\HealthBarControl.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
