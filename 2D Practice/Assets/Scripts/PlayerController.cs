@@ -5,12 +5,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
   public Transform FirePoint;
-public Transform Player;
-public GameObject Projectile;
-public float fireRate = 15f;
-public float MoveSpeed = 0.1f;
+ public Transform Player;
+ public GameObject Projectile;
+ public float fireRate = 15f;
+ public float MoveSpeed = 0.1f;
+    public Animator animator;
+ private float nextShot = 0f;
 
-private float nextShot = 0f;
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void FixedUpdate()
     {
@@ -18,9 +23,11 @@ private float nextShot = 0f;
             // SHOOT
     if (Input.GetKey("space") && Time.time >= nextShot)
     {
-    nextShot = Time.time + 1f/fireRate;
-    Shoot();
-    } 
+            animator.SetTrigger("shoot");
+      nextShot = Time.time + 1f/fireRate;
+      Shoot();
+            //animator.SetBool("shoot", false);
+        } 
     // MOVE UP
   
     if (Input.GetKey(KeyCode.W))
@@ -35,15 +42,13 @@ private float nextShot = 0f;
     // MOVE DOWN
     if (Input.GetKey(KeyCode.S))
     {
-    transform.position = transform.position + new Vector3(0, -MoveSpeed, 0);
-
-        
+     transform.position = transform.position + new Vector3(0, -MoveSpeed, 0);
     }
 
 
 
 
-    // Move Right 
+      // Move Right 
         if (Input.GetKey(KeyCode.D))
     {
     transform.position = transform.position + new Vector3(MoveSpeed, 0, 0);
@@ -67,8 +72,8 @@ private float nextShot = 0f;
  public void Shoot()
  {
  
- GameObject Proj = (GameObject)Instantiate(Projectile, FirePoint.position, FirePoint.rotation);
- Destroy(Proj, 1f);
+  GameObject Proj = (GameObject)Instantiate(Projectile, FirePoint.position, FirePoint.rotation);
+  Destroy(Proj, 1f);
 
  }
 }

@@ -68,6 +68,13 @@
     <Compile Include="Assets\Scripts\SubmarineAI.cs" />
     <Compile Include="Assets\Scripts\SubmarineProjectile.cs" />
     <Compile Include="Assets\Scripts\SpawnBoats.cs" />
+    <Compile Include="Assets\Scripts\SpawnHiggins.cs" />
+    <Compile Include="Assets\Scripts\HigginsAI.cs" />
+    <Compile Include="Assets\Scripts\SpawnBall.cs" />
+    <Compile Include="Assets\Scripts\SpawnLance.cs" />
+    <Compile Include="Assets\Scripts\LanceAI.cs" />
+    <Compile Include="Assets\Scripts\BallAI.cs" />
+    <Compile Include="Assets\Scripts\LoadHigginsBorder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

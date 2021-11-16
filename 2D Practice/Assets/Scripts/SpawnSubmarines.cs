@@ -9,7 +9,7 @@ public class SpawnSubmarines : MonoBehaviour
     public float minX;
     public float maxY;
     public float minY;
-    public float timeBetweenSpawn;
+    public static float timeBetweenSpawn = 12;
     private float spawnTime;
     public float ogSpawnTime;
 

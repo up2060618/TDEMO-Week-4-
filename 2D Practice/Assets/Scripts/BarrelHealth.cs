@@ -22,7 +22,7 @@ public class BarrelHealth : MonoBehaviour
         if (Health == 0)
         {
             Destroy(gameObject);
-            Score.ScoreCount = Score.ScoreCount + 1;
+            ScoreScript.ScoreCount = ScoreScript.ScoreCount + 1;
         }
 
     }
