@@ -21,7 +21,7 @@ public class ScoreScript : MonoBehaviour
      
     CurrentScore.text = ScoreCount.ToString();
        
-    if (ScoreCount >= 2)
+    if (ScoreCount >= 25)
     {
         ToEndScreen();
     }
