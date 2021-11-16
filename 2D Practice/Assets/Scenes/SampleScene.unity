@@ -1363,7 +1363,7 @@ MonoBehaviour:
   minX: 3
   maxY: 5.5
   minY: -5.5
-  ogSpawnTime: 2
+  ogSpawnTime: 1
 --- !u!114 &1685755283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1381,7 +1381,7 @@ MonoBehaviour:
   minX: 3
   maxY: 5.5
   minY: -5.5
-  ogSpawnTime: 2
+  ogSpawnTime: 20
 --- !u!114 &1685755284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1399,7 +1399,7 @@ MonoBehaviour:
   minX: 3
   maxY: 5.5
   minY: -5.5
-  ogSpawnTime: 2
+  ogSpawnTime: 13
 --- !u!114 &1685755285
 MonoBehaviour:
   m_ObjectHideFlags: 0
