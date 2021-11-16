@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class HealthBarControl : MonoBehaviour
 {
-    public GameObject Life, Life1, Life2, gameOver;
+    public GameObject FullLife, TwoLife, OneLife, gameOver;
     public static int health;
     // Start is called before the first frame update
     void Start()
     {
         health = 3;
-        Life.gameObject.SetActive(true);
-        Life1.gameObject.SetActive(true);
-        Life2.gameObject.SetActive(true);
+        FullLife.gameObject.SetActive(true);
+        TwoLife.gameObject.SetActive(false);
+        OneLife.gameObject.SetActive(false);
         gameOver.gameObject.SetActive(false);
     }
 
@@ -26,27 +26,24 @@ public class HealthBarControl : MonoBehaviour
         {
 
             case 3:
-                Life.gameObject.SetActive(true);
-                Life1.gameObject.SetActive(true);
-                Life2.gameObject.SetActive(true);
+                FullLife.gameObject.SetActive(true);
+                
                 break;
 
             case 2:
-                Life.gameObject.SetActive(true);
-                Life1.gameObject.SetActive(true);
-                Life2.gameObject.SetActive(false);
+                FullLife.gameObject.SetActive(false);
+                TwoLife.gameObject.SetActive(true);
+                
                 break;
 
             case 1:
-                Life.gameObject.SetActive(true);
-                Life1.gameObject.SetActive(false);
-                Life2.gameObject.SetActive(false);
+                TwoLife.gameObject.SetActive(false);
+                OneLife.gameObject.SetActive(true);
+                
                 break;
 
             case 0:
-                Life.gameObject.SetActive(false);
-                Life1.gameObject.SetActive(false);
-                Life2.gameObject.SetActive(false);
+                OneLife.gameObject.SetActive(false);
                 gameOver.gameObject.SetActive(true);
                 Time.timeScale = 0;
                 break;
