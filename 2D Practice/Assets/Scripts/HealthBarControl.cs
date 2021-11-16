@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthBarControl : MonoBehaviour
 {
@@ -45,7 +46,7 @@ public class HealthBarControl : MonoBehaviour
             case 0:
                 OneLife.gameObject.SetActive(false);
                 gameOver.gameObject.SetActive(true);
-                Time.timeScale = 0;
+                SceneManager.LoadScene(0);
                 break;
 
         }

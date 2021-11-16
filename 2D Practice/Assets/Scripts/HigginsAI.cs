@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HigginsAI : MonoBehaviour
 {
@@ -39,6 +40,10 @@ public class HigginsAI : MonoBehaviour
             case 100:
                 GetComponent<Transform>().localScale = new Vector3(5, 5, 5);
                 break;
+            case 0:
+                SceneManager.LoadScene(2);
+                break;
+
         }
 
     }

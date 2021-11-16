@@ -9,7 +9,7 @@ public class SpawnLance : MonoBehaviour
     public float minX;
     public float maxY;
     public float minY;
-    public static float timeBetweenSpawn = 6;
+    public static float timeBetweenSpawn = 4.8f;
     private float spawnTime;
     
 
