@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Barrel
   - Projectile
+  - Submarine
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - Player
   - SideBorder
   - IgnoreBoundries
-  - 
-  - 
+  - EnemyProjectile
+  - HIGGINS <3
   - 
   - 
   - 

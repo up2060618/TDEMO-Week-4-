@@ -9,13 +9,14 @@ public class SpawnBarrels : MonoBehaviour
     public float minX;
     public float maxY;
     public float minY;
-    public float timeBetweenSpawn;
+    public static float timeBetweenSpawn = 3;
     private float spawnTime;
+    public float ogSpawnTime;
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > spawnTime)
+        if ((Time.time > spawnTime) && (Time.time > ogSpawnTime))
         {
             Spawn();
             spawnTime = Time.time + timeBetweenSpawn;

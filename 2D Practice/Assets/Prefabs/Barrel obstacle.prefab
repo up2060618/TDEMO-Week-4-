@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7442244136947769739}
   - component: {fileID: 1005121431892292976}
   - component: {fileID: 7355741678898287248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Barrel obstacle
   m_TagString: Barrel
   m_Icon: {fileID: 0}
@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac3eb8cec2ec1bf449fdc0904b5bb39e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 5
   Player: {fileID: 7236897912048630111, guid: d5d61309763bfff4fab13da0b68c6149, type: 3}
   Score: {fileID: 0}
 --- !u!61 &7355741678898287248

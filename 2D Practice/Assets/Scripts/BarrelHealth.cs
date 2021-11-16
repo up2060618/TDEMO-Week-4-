@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BarrelHealth : MonoBehaviour
 {
-    private int Health;
+    public int Health;
     public GameObject Player;
     public ScoreScript Score;    
 
@@ -12,7 +12,7 @@ public class BarrelHealth : MonoBehaviour
     {
         Player = GameObject.Find("shark (player sprite)");
         Score = Player.GetComponent<ScoreScript>();
-        Health = 20;
+        
     }
 
 
@@ -22,7 +22,7 @@ public class BarrelHealth : MonoBehaviour
         if (Health == 0)
         {
             Destroy(gameObject);
-            Score.ScoreCount = Score.ScoreCount + 1;
+            ScoreScript.ScoreCount = ScoreScript.ScoreCount + 1;
         }
 
     }
